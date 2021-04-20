@@ -55,4 +55,16 @@ body {
     max-width: 168px;
   }
 
-  
+  .fa-arrow-left:before {
+    position: absolute;
+    left: 32px;
+    height: 32px;
+    width: 32px;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%);
+    font-size: 19px;
+    color: #000;
+  }
