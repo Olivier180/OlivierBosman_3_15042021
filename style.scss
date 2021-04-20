@@ -64,7 +64,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: translateY(-50%);
+    transform: translate(0, ty);
     font-size: 19px;
     color: #000;
   }
