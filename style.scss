@@ -1,4 +1,12 @@
 
+
+$color-primaire:#9356DC ;
+$color-secondaire:#FF79DA;
+$color-tertiaire:#99E2D0;
+
+
+
+
 body {
     box-sizing: border-box;
   }
@@ -25,4 +33,17 @@ body {
   
   .containerone {
     max-width: 2560px;
+  }
+
+  /*HEADER*/
+  header .logo{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+   position:relative;
+    
+  }
+
+  header .logo img {
+    max-width: 168px;
   }
