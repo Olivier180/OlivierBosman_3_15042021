@@ -41,7 +41,7 @@ body {
     justify-content:center;
     align-items:center;
    position:relative;
-  }
+  
 
   header {
     box-shadow: 0 0 0.80px #000;
@@ -54,6 +54,7 @@ body {
   header .logo img {
     max-width: 168px;
   }
+}
 
   .fa-arrow-left:before {
     position: absolute;

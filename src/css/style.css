@@ -32,14 +32,14 @@ header .logo {
   position: relative;
 }
 
-header {
+header .logo header {
   box-shadow: 0 0 0.80px #000;
   width: 100%;
   min-width: 320px;
   padding: 21px 0;
 }
 
-header .logo img {
+header .logo header .logo img {
   max-width: 168px;
 }
 
