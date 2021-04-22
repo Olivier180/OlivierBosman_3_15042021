@@ -124,7 +124,7 @@ header .logo img {
   margin: 0 0 30px 0;
 }
 
-.office-choix {
+.office h2 .office-choix {
   margin: 0 20px 20px 40px;
   font-weight: bold;
   background-color: #F6F6F6;
@@ -138,15 +138,15 @@ header .logo img {
   max-height: 78px;
 }
 
-.office-choix:hover {
+.office h2 .office-choix:hover {
   background-color: #f5edff;
 }
 
-.office-choix:hover .fas {
+.office h2 .office-choix:hover .fas {
   color: #9356DC;
 }
 
-.office-choix-nombre {
+.office h2 .office-choix-nombre {
   width: 18px;
   height: 18px;
   padding: 4px 4px;

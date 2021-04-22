@@ -44,21 +44,18 @@ body {
     width: 100%;
     min-width: 320px;
     padding: 21px 0;
-  }
-  header .logo {
+  
+  .logo {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
   }
-  header .logo img {
+  .logo img {
     max-width: 168px;
   }
-
-
+}
   
-
-
   .fa-arrow-left:before {
     position: $position-ideal;
     left: 32px;
@@ -137,7 +134,7 @@ body {
   
       .office h2 {
     margin: 0 0 30px 0;
-  }
+ 
   .office-choix {
     margin: 0 20px 20px 40px;
     font-weight: bold;
@@ -168,6 +165,7 @@ body {
     top: 30%;
     left: -4%;
   }
+}
  
    /*LES RESTAURANTS*/
    .restaurants {
