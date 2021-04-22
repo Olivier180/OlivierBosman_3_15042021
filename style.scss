@@ -45,6 +45,7 @@ body {
     min-width: 320px;
     padding: 21px 0;
   
+  
   .logo {
     display: flex;
     justify-content: center;
@@ -55,6 +56,7 @@ body {
     max-width: 168px;
   }
 }
+
   
   .fa-arrow-left:before {
     position: $position-ideal;
@@ -93,7 +95,7 @@ body {
     background-color: #f6f6f6;
     padding: 40px 40px;
     margin-bottom: 50px;
-  }
+  
   .reserve-menus {
     font-weight: bold;
     font-size: 25px;
@@ -114,8 +116,9 @@ body {
   .reserve-explorer:hover {
     opacity: 0.8;
     box-shadow: 16px 16px 20px #000000;
-  }
-
+     }
+   }
+  
   /* ORGANISATION */
 
   .office-titre {
@@ -134,6 +137,7 @@ body {
   
       .office h2 {
     margin: 0 0 30px 0;
+      }
  
   .office-choix {
     margin: 0 20px 20px 40px;
@@ -165,7 +169,7 @@ body {
     top: 30%;
     left: -4%;
   }
-}
+
  
    /*LES RESTAURANTS*/
    .restaurants {

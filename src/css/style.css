@@ -81,12 +81,12 @@ header .logo img {
   margin-bottom: 50px;
 }
 
-.reserve-menus {
+.reserve .reserve-menus {
   font-weight: bold;
   font-size: 25px;
 }
 
-.reserve-explorer {
+.reserve .reserve-explorer {
   padding: 12px 24px;
   border-radius: 30px;
   text-align: center;
@@ -100,7 +100,7 @@ header .logo img {
   box-shadow: 4px 4px 10px #000000;
 }
 
-.reserve-explorer:hover {
+.reserve .reserve-explorer:hover {
   opacity: 0.8;
   box-shadow: 16px 16px 20px #000000;
 }
@@ -124,7 +124,7 @@ header .logo img {
   margin: 0 0 30px 0;
 }
 
-.office h2 .office-choix {
+.office-choix {
   margin: 0 20px 20px 40px;
   font-weight: bold;
   background-color: #F6F6F6;
@@ -138,15 +138,15 @@ header .logo img {
   max-height: 78px;
 }
 
-.office h2 .office-choix:hover {
+.office-choix:hover {
   background-color: #f5edff;
 }
 
-.office h2 .office-choix:hover .fas {
+.office-choix:hover .fas {
   color: #9356DC;
 }
 
-.office h2 .office-choix-nombre {
+.office-choix-nombre {
   width: 18px;
   height: 18px;
   padding: 4px 4px;
