@@ -1,9 +1,10 @@
 
 
-$color-primaire:#9356DC ;
-$color-secondaire:#FF79DA;
-$color-tertiaire:#99E2D0;
-
+$color-violet:#9356DC ;
+$color-rose:#FF79DA;
+$color-vert:#99E2D0;
+$color-box-shadow:#000;
+$position-ideal: absolute;
 
 
 
@@ -36,11 +37,6 @@ body {
   }
 
   /*HEADER*/
-  header .logo{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-   position:relative;
   
 
   header {
@@ -49,15 +45,22 @@ body {
     min-width: 320px;
     padding: 21px 0;
   }
-
-
+  header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
   header .logo img {
     max-width: 168px;
   }
-}
+
+
+  
+
 
   .fa-arrow-left:before {
-    position: absolute;
+    position: $position-ideal;
     left: 32px;
     height: 32px;
     width: 32px;
@@ -73,6 +76,8 @@ body {
     margin-right:19px;
   }
 
+  /* MAPS */
+
   .recherche-rest {
     display: flex;
     justify-content: center;
@@ -81,7 +86,9 @@ body {
     font-weight: bold;
     width: 100%;
   }
-  
+
+
+  /* PREFACE */
   .reserve {
     display: flex;
     flex-direction: column;
@@ -103,7 +110,7 @@ body {
     font-size: 15px;
     font-family: "Roboto", sans-serif;
     margin: 0 auto;
-    background-image: linear-gradient($color-secondaire, $color-primaire);
+    background-image: linear-gradient($color-rose, $color-violet);
     transition: background-color 250ms;
     box-shadow: 4px 4px 10px #000000;
   }
@@ -111,6 +118,8 @@ body {
     opacity: 0.8;
     box-shadow: 16px 16px 20px #000000;
   }
+
+  /* ORGANISATION */
 
   .office-titre {
     margin: 0 0 20px 22px;
@@ -125,7 +134,437 @@ body {
     justify-content: space-between;
     padding: 0 15px;
   }
-  .office h2 {
+  
+      .office h2 {
     margin: 0 0 30px 0;
   }
+  .office-choix {
+    margin: 0 20px 20px 40px;
+    font-weight: bold;
+    background-color: #F6F6F6;
+    padding: 30px 50px 30px 18px;
+    margin-left: 20px;
+    text-align: center;
+    border-radius: 20px;
+    position: relative;
+    font-family: "Roboto", sans-serif;
+    width: 300px;
+    max-height: 78px;
+  }
+  .office-choix:hover {
+    background-color: #f5edff;
+  }
+  .office-choix:hover .fas {
+    color:$color-violet;
+  }
+  .office-choix-nombre {
+    width: 18px;
+    height: 18px;
+    padding: 4px 4px;
+    border-radius: 50%;
+    background-color:$color-violet;
+    color: #FFF;
+    position: absolute;
+    top: 30%;
+    left: -4%;
+  }
+ 
+   /*LES RESTAURANTS*/
+   .restaurants {
+    background-color: #f6f6f6;
+  }
 
+  .restaurants-conteneur {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .restaurants-titre {
+    padding: 50px 0 10px 22px;
+  }
+  .restaurants-pict {
+    border-radius: 20px;
+    background-color: white;
+    margin-bottom: 18px;
+    position: relative;
+    max-width: 280px;
+    min-width: 280px;
+  }
+  
+  .restaurants-pict img {
+    width: 100%;
+    max-height: 175px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+  }
+  .restaurants-pict .restaurants-pict-contenu {
+    padding: 19px 11px;
+    position: relative;
+    display: flex;
+  }
+  .restaurants-pict .restaurants-pict-contenu h3 {
+    margin-bottom: 6px;
+  }
+  .restaurants-pict .restaurants-pict-contenu .restaurants-pict-contenut-nom {
+    position: relative;
+  }
+  @keyframes coeur-rempli-opacity {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.5;
+      background-image: linear-gradient(100deg, #9356DC, #FF79DA);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    100% {
+      opacity: 1;
+      background-image: linear-gradient(100deg, #9356DC, #FF79DA);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  @keyframes coeur-vide-opacity1 {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  .restaurants-pict .restaurants-pict-contenu .cœur {
+    position: $position-ideal;
+    right: 20px;
+    top: 1;
+  }
+  .restaurants-pict .restaurants-pict-contenu .cœur-1 {
+    position: relative;
+  }
+  .restaurants-pict .restaurants-pict-contenu .cœur-1:hover {
+    animation: coeur-vide-opacity1 1s;
+  }
+  .restaurants-pict .restaurants-pict-contenu .cœur-2 {
+    position: $position-ideal;
+    top: 0px;
+    opacity: 0;
+    color: #FFF;
+  }
+  .restaurants-pict .restaurants-pict-contenu .cœur-2:hover {
+    animation: coeur-rempli-opacity 1s forwards;
+  }
+  .restaurants .button-news {
+    background-color: #99E2D0;
+    color: #1b6150;
+    padding: 8px;
+    border-radius: 2px;
+    position: absolute;
+    top: 16px;
+    right: 12px;
+  }
+
+  /*Bannière*/
+  .picture-restaurant img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover
+  }
+
+  /*Carte restaurant*/
+  .cadre-titre {
+   font-family: "Shrikhand", cursive;
+   max-width: 322px;
+   
+  }
+
+  .fa-heart:before {
+    margin-left: 20px;
+  }
+  
+  .cadre {
+    background-color: #F6F6F6;
+    padding: 36px 21px;
+    margin-top: -27px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    position: relative;
+    z-index: 1;
+    
+  }
+  .cadre .far {
+    align-self: flex-end;
+  }
+  .cadre h2 {
+    margin-bottom: 35px;
+  }
+
+  .entrees {
+    margin-bottom: 27px;
+  }
+  .entrees h2:after {
+    content: "";
+    display: block;
+    width: 43px;
+    height: 3px;
+    background: #99E2D0;
+  }
+
+  .cadre-general-entrees h2, .cadre-general-plats h2, .cadre-general-desserts h2 {
+  font-weight: normal;
+  font-size: 20px;
+  }
+
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+ .cadre-general-contenu {
+  background-color: #FFF;
+  max-width: 350px;
+  height: 70px;
+  box-shadow: 4px 4px 16px #3F4143;
+  padding: 0 0 0 16px;
+  border-radius: 12px;
+  margin: 16px 0;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  animation: fadeInDown 2s ease-in-out;
+  
+}
+
+
+.cadre-general-contenu-plat{
+  width: 350px;
+  padding: 14px 0;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  animation: fadeInDown 3s ease-in-out;
+  
+}
+
+.cadre-general-contenu-plat h3 {
+  font-size: 16px;
+}
+
+.cadre-general-contenu-plat h4 {
+  font-size: 16px;
+}
+
+.cadre-general-contenu:hover .cadre-general-contenu-plat-confirmer {
+  margin-right: 0px;
+  min-width: 64px;
+  transition: margin-right 0.5s;
+}
+.cadre-general-contenu:hover .header-menu {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+ 
+}
+.cadre-general-contenu:hover .header-menu h3 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.cadre-general-contenu:hover .header-menu h4 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.cadre-general-contenu:hover .cercle {
+  transform: rotate(360deg);
+}
+
+.cadre-general-contenu-plat-confirmer {
+  background-color: #99E2D0;
+  min-width: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: -64px;
+}
+
+.cercle {
+  width: 26px;
+  height: 26px;
+  border-radius: 100px;
+  background: #FFF;
+  color: #99E2D0;
+  display: flex;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  transition: transform 0.5s;
+}
+.cercle .fas {
+  margin-left: 4px;
+}
+
+.center {
+  text-align: center;
+}
+
+.cadre-prix {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  align-self: flex-end;
+  font-weight: bold;
+  margin-right: 20px;
+  width: 25%;
+}
+
+.header-menu {
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-overflow: ellipsis;
+}
+.header-menu h3 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.header-menu h4 {
+  font-weight: normal;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/*Bouton Commander*/
+.button-commande {
+  padding: 30px 0 80px 0;
+  text-align: center;
+  background-color: #F6F6F6;
+}
+.button-commander {
+  background-color: #9356DC;
+  padding: 15px 50px;
+  border-radius: 30px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: #FFF;
+  font-weight: normal;
+  font-size: 18px;
+  margin: 0 auto;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  transition: background-color 250ms;
+  box-shadow: 4px 4px 10px $color-box-shadow;
+}
+.button-commander:hover {
+  opacity: 0.8;
+  box-shadow: 16px 16px 20px $color-box-shadow;
+}
+
+/*Footer*/
+footer {
+  background-color: #353535;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 25px 0px;
+  max-width: 100%;
+  min-width: 320px;
+}
+footer h3 {
+  margin: 0 0 10px 20px;
+  color: #e6e6e6;
+  font-weight: normal;
+}
+footer a {
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+  color: #FFF;
+}
+footer .footer-logo {
+  font-family: "Shrikhand", cursive;
+  font-weight: normal;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+
+
+/*RESPONSIVE */
+
+@media screen and (min-width: 1800px) {
+  .containerone {
+    max-width: 1800px;
+    margin: auto;
+    }
+  }
+  
+  @media screen and (min-width: 375px) {
+    .restaurants-pict {
+      max-width: 330px;
+      min-width: 280px;
+    }
+  }
+  @media screen and (min-width: 650px) {
+    .restaurants-pict {
+      margin-right: 25px;
+    }
+  }
+  
+  
+  @media screen and (min-width: 1024px) {
+    .cadre-general {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+  
+  @media screen and (min-width: 1140px) {
+    .cadre-general-entrees {
+      margin-right: 10px;
+    }
+  }
+  
+  @media screen and (min-width: 1142px) {
+    .cadre-general-plats {
+      margin-right: 10px;
+    }
+  }
+  
+  @media screen and (min-width: 400px) and (max-width: 1024px) {
+    .cadre-general-contenu {
+      max-width: none;
+    }
+  }
+  
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+  .cadre-general-contenu-plat h3 {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .cadre-general-contenu-plat h4 {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+   }
+  }
+  
+  @media screen and (max-width: 405px) {
+  .cadre-general-contenu:hover .header-menu {
+    max-width: 130px;
+   }
+  }
+  
