@@ -13,16 +13,40 @@ a {
   color: black;
 }
 
-.containerone {
-  max-width: 2560px;
-}
-
 h2, h3, h4, h5, h6, p {
   font-family: "Roboto", sans-serif;
 }
 
 .containerone {
   max-width: 2560px;
+}
+
+.chargement {
+  border: 10px solid #D869EF;
+  width: 110px;
+  height: 110px;
+  border-top: 10px solid #99E2D0;
+  border-bottom: 10px solid #99E2D0;
+  border-radius: 50%;
+  margin: auto;
+  z-index: 10000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  animation: spin 3s linear forwards;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+  }
 }
 
 /*HEADER*/
@@ -120,11 +144,11 @@ header .logo img {
   padding: 0 15px;
 }
 
-.office h2 {
+.office .office h2 {
   margin: 0 0 30px 0;
 }
 
-.office-choix {
+.office .office-choix {
   margin: 0 20px 20px 40px;
   font-weight: bold;
   background-color: #F6F6F6;
@@ -138,15 +162,15 @@ header .logo img {
   max-height: 78px;
 }
 
-.office-choix:hover {
+.office .office-choix:hover {
   background-color: #f5edff;
 }
 
-.office-choix:hover .fas {
+.office .office-choix:hover .fas {
   color: #9356DC;
 }
 
-.office-choix-nombre {
+.office .office-choix-nombre {
   width: 18px;
   height: 18px;
   padding: 4px 4px;
@@ -322,256 +346,14 @@ header .logo img {
   font-size: 20px;
 }
 
-@keyframes fadeInDown {
+@keyframes fadeIn {
   0% {
     opacity: 0;
+    transform: scale(0);
   }
   100% {
     opacity: 1;
-  }
-}
-
-.cadre-general-contenu {
-  background-color: #FFF;
-  max-width: 350px;
-  height: 70px;
-  box-shadow: 4px 4px 16px #3F4143;
-  padding: 0 0 0 16px;
-  border-radius: 12px;
-  margin: 16px 0;
-  display: flex;
-  justify-content: space-between;
-  overflow: hidden;
-  animation: fadeInDown 2s ease-in-out;
-}
-
-.cadre-general-contenu-plat {
-  width: 350px;
-  padding: 14px 0;
-  border-radius: 12px;
-  display: flex;
-  justify-content: space-between;
-  animation: fadeInDown 3s ease-in-out;
-}
-
-.cadre-general-contenu-plat h3 {
-  font-size: 16px;
-}
-
-.cadre-general-contenu-plat h4 {
-  font-size: 16px;
-}
-
-.cadre-general-contenu:hover .cadre-general-contenu-plat-confirmer {
-  margin-right: 0px;
-  min-width: 64px;
-  transition: margin-right 0.5s;
-}
-
-.cadre-general-contenu:hover .header-menu {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-
-.cadre-general-contenu:hover .header-menu h3 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-.cadre-general-contenu:hover .header-menu h4 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-.cadre-general-contenu:hover .cercle {
-  transform: rotate(360deg);
-}
-
-.cadre-general-contenu-plat-confirmer {
-  background-color: #99E2D0;
-  min-width: 64px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: -64px;
-}
-
-.cercle {
-  width: 26px;
-  height: 26px;
-  border-radius: 100px;
-  background: #FFF;
-  color: #99E2D0;
-  display: flex;
-  align-items: center;
-  align-self: center;
-  align-content: center;
-  transition: transform 0.5s;
-}
-
-.cercle .fas {
-  margin-left: 4px;
-}
-
-.center {
-  text-align: center;
-}
-
-.cadre-prix {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  align-self: flex-end;
-  font-weight: bold;
-  margin-right: 20px;
-  width: 25%;
-}
-
-.header-menu {
-  width: 230px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-overflow: ellipsis;
-}
-
-.header-menu h3 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.header-menu h4 {
-  font-weight: normal;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-/*Bouton Commander*/
-.button-commande {
-  padding: 30px 0 80px 0;
-  text-align: center;
-  background-color: #F6F6F6;
-}
-
-.button-commander {
-  background-color: #9356DC;
-  padding: 15px 50px;
-  border-radius: 30px;
-  text-align: center;
-  font-family: "Roboto", sans-serif;
-  color: #FFF;
-  font-weight: normal;
-  font-size: 18px;
-  margin: 0 auto;
-  background-image: linear-gradient(#FF79DA, #9356DC);
-  transition: background-color 250ms;
-  box-shadow: 4px 4px 10px #000;
-}
-
-.button-commander:hover {
-  opacity: 0.8;
-  box-shadow: 16px 16px 20px #000;
-}
-
-/*Footer*/
-footer {
-  background-color: #353535;
-  color: #FFF;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 25px 0px;
-  max-width: 100%;
-  min-width: 320px;
-}
-
-footer h3 {
-  margin: 0 0 10px 20px;
-  color: #e6e6e6;
-  font-weight: normal;
-}
-
-footer a {
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
-  color: #FFF;
-}
-
-footer .footer-logo {
-  font-family: "Shrikhand", cursive;
-  font-weight: normal;
-  font-size: 20px;
-  margin-bottom: 15px;
-}
-
-/*RESPONSIVE */
-@media screen and (min-width: 1800px) {
-  .containerone {
-    max-width: 1800px;
-    margin: auto;
-  }
-}
-
-@media screen and (min-width: 375px) {
-  .restaurants-pict {
-    max-width: 330px;
-    min-width: 280px;
-  }
-}
-
-@media screen and (min-width: 650px) {
-  .restaurants-pict {
-    margin-right: 25px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .cadre-general {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-}
-
-@media screen and (min-width: 1140px) {
-  .cadre-general-entrees {
-    margin-right: 10px;
-  }
-}
-
-@media screen and (min-width: 1142px) {
-  .cadre-general-plats {
-    margin-right: 10px;
-  }
-}
-
-@media screen and (min-width: 400px) and (max-width: 1024px) {
-  .cadre-general-contenu {
-    max-width: none;
-  }
-}
-
-@media screen and (min-width: 320px) and (max-width: 425px) {
-  .cadre-general-contenu-plat h3 {
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-  }
-  .cadre-general-contenu-plat h4 {
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-  }
-}
-
-@media screen and (max-width: 405px) {
-  .cadre-general-contenu:hover .header-menu {
-    max-width: 130px;
+    transform: scale(1);
   }
 }
 /*# sourceMappingURL=style.css.map */
