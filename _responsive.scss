@@ -3,7 +3,7 @@
       max-width: 1800px;
       margin: auto;
     }
-  }
+    }
 
   @media screen and (min-width: 375px) {
     .restaurants-pict {
@@ -16,7 +16,8 @@
     .restaurants-pict {
       margin-right: 25px;
     }
-  }
+    
+}
   
   @media screen and (min-width: 1024px) {
     .cadre-general {
@@ -24,7 +25,10 @@
       flex-wrap: wrap;
       justify-content: space-between;
     }
-  }
+    
+}
+
+    
 
   @media screen and (min-width: 1140px) {
     .cadre-general-entrees {
@@ -42,7 +46,9 @@
     .cadre-general-contenu {
       max-width: none;
     }
-  }
+    
+ 
+}
 
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .cadre-general-contenu-plat h3 {
@@ -56,10 +62,40 @@
       white-space: nowrap;
      
     }
+   
   }
   
   @media screen and (max-width: 405px) {
     .cadre-general-contenu:hover .header-menu {
       max-width: 130px;
     }
+  }
+    
+    
+    
+  @media screen and (min-width: 440px) and (max-width: 736px) {
+    .office {
+      font-weight: bold;
+      font-size: 15px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 0 15px;
+  } 
+
+  }
+
+  @media screen and (min-width: 375px) and (max-width: 667px) {
+    
+    .office {
+      font-weight: bold;
+      font-size: 15px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 0 15px;
+  }
+
   }

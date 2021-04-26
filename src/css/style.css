@@ -17,7 +17,7 @@ h2, h3, h4, h5, h6, p {
 }
 
 .containerone {
-  max-width: 2560px;
+  max-width: 1900px;
 }
 
 .chargement {
@@ -599,6 +599,30 @@ footer a:hover {
 @media screen and (max-width: 405px) {
   .cadre-general-contenu:hover .header-menu {
     max-width: 130px;
+  }
+}
+
+@media screen and (min-width: 440px) and (max-width: 736px) {
+  .office {
+    font-weight: bold;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 15px;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 667px) {
+  .office {
+    font-weight: bold;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 15px;
   }
 }
 
