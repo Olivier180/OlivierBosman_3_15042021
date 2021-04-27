@@ -16,7 +16,16 @@
     .restaurants-pict {
       margin-right: 25px;
     }
-    
+    .cadre-prix {
+      
+      margin-right: -285px;
+      width: 25%;
+    }
+    .office-choix {
+      
+      width: 500px;
+     
+  }
 }
   
   @media screen and (min-width: 1024px) {
@@ -26,7 +35,10 @@
       justify-content: space-between;
     }
     
-}
+   
+    }
+    
+
 
     
 
@@ -34,6 +46,7 @@
     .cadre-general-entrees {
       margin-right: 10px;
     }
+    
   }
 
   @media screen and (min-width: 1142px) {
@@ -83,7 +96,7 @@
       justify-content: center;
       padding: 0 15px;
   } 
-
+  
   }
 
   @media screen and (min-width: 375px) and (max-width: 667px) {
@@ -97,5 +110,24 @@
       justify-content: center;
       padding: 0 15px;
   }
-
+  
+  
   }
+  
+
+  @media screen and (min-width: 640px) {
+  
+    .cadre-prix {
+      
+      margin-right: -220px;
+      
+    }
+    .cadre-general-contenu:hover .header-menu {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+
+
+
+ 

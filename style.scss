@@ -1,16 +1,15 @@
 
-
+@import "_vars";
 
 
 
 body {
     box-sizing: border-box;
-  }
   
-  * {
-    padding: 0;
-    margin: 0;
   }
+  *{margin:0;
+    padding:0;} 
+  
   
   a {
     text-decoration: none;
@@ -23,14 +22,16 @@ body {
   
   .containerone {
     max-width:1900px;
+    margin:0;
+    padding:0;
   }
 
   .chargement{
-    border:10px solid $colour-pink;
+    border:10px solid $color-violet;
     width:95px;
     height:95px;
-    border-top:10px solid #99E2D0;
-    border-bottom:10px solid #99E2D0;
+    border-top:10px solid $color-vert;
+    border-bottom:10px solid $color-vert;
     border-radius:50%;
     margin:auto;
     z-index: 10000;
@@ -127,6 +128,15 @@ body {
   font-weight: bold;
   font-size: 25px;
 }
+
+.reserve-decouvrir{
+  margin-bottom:12px;
+}
+
+
+
+
+
 .reserve-explorer{
   padding: 12px 24px;
   border-radius: 30px;
@@ -155,7 +165,7 @@ body {
   font-size: 15px;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  
   justify-content: space-between;
   padding: 0 15px;
 }
@@ -414,7 +424,7 @@ body {
 }
 
 .cadre-general-contenu-plat-confirmer {
-  background-color: #99E2D0;
+  background-color: $color-vert;
   min-width: 64px;
   display: flex;
   align-items: center;
@@ -530,7 +540,7 @@ footer a:hover {
 
 
 
-@import "./_variables";
+
 
 
 @import "./_responsive";
