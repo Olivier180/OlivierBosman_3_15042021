@@ -23,6 +23,9 @@
   .office-choix {
     width: 500px;
   }
+  .fa-tablet-alt {
+    margin-left: 12px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -78,9 +81,6 @@
     flex-wrap: wrap;
     justify-content: center;
     padding: 0 15px;
-  }
-  .fa-tablet-alt {
-    margin-left: 12px;
   }
 }
 
