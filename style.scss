@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import "_vars";
-
+@import "_responsive";
 
 
 
@@ -133,10 +133,6 @@ body {
 .reserve-decouvrir{
   margin-bottom:12px;
 }
-
-
-
-
 
 .reserve-explorer{
   padding: 12px 24px;
@@ -298,7 +294,7 @@ body {
 }
 .restaurants .button-news {
   background-color: #99E2D0;
-  color: #25ac8a;
+  color: #40a78d;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-weight: bold;
   padding: 8px;
@@ -342,7 +338,7 @@ body {
 }
 
 .entrees {
-  margin-bottom: 27px;
+  margin-top: 47px;
 }
 .entrees h2:after {
   content: "";
@@ -542,7 +538,7 @@ footer a:hover {
 
 }
 
-@import "_responsive";
+
 
 
 

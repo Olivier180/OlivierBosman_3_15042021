@@ -1,3 +1,117 @@
+@media screen and (min-width: 1800px) {
+  .containerone {
+    max-width: 1800px;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .restaurants-pict {
+    max-width: 330px;
+    min-width: 280px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .restaurants-pict {
+    margin-right: 25px;
+  }
+  .cadre-prix {
+    margin-right: -285px;
+    width: 25%;
+  }
+  .office-choix {
+    width: 500px;
+  }
+  .fa-tablet-alt {
+    margin-left: 12px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .cadre-general {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .cadre-general-entrees {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (min-width: 1142px) {
+  .cadre-general-plats {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 1024px) {
+  .cadre-general-contenu {
+    max-width: none;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .cadre-general-contenu-plat h3 {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .cadre-general-contenu-plat h4 {
+    font-size: 14px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+@media screen and (max-width: 405px) {
+  .cadre-general-contenu:hover .header-menu {
+    max-width: 130px;
+  }
+}
+
+@media screen and (min-width: 440px) and (max-width: 736px) {
+  .office {
+    font-weight: bold;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 15px;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 667px) {
+  .office {
+    font-weight: bold;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 15px;
+  }
+  .fa-tablet-alt {
+    margin-left: 12px;
+  }
+  h2 {
+    margin-left: 25px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .cadre-prix {
+    margin-right: -220px;
+  }
+  .cadre-general-contenu:hover .header-menu {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+
 body {
   box-sizing: border-box;
 }
@@ -291,7 +405,7 @@ header .logo img {
 
 .restaurants .button-news {
   background-color: #99E2D0;
-  color: #25ac8a;
+  color: #40a78d;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-weight: bold;
   padding: 8px;
@@ -337,7 +451,7 @@ header .logo img {
 }
 
 .entrees {
-  margin-bottom: 27px;
+  margin-top: 47px;
 }
 
 .entrees h2:after {
@@ -543,116 +657,5 @@ footer a:hover {
   font-size: 20px;
   margin-bottom: 15px;
   color: #fff;
-}
-
-@media screen and (min-width: 1800px) {
-  .containerone {
-    max-width: 1800px;
-    margin: auto;
-  }
-}
-
-@media screen and (min-width: 375px) {
-  .restaurants-pict {
-    max-width: 330px;
-    min-width: 280px;
-  }
-}
-
-@media screen and (min-width: 650px) {
-  .restaurants-pict {
-    margin-right: 25px;
-  }
-  .cadre-prix {
-    margin-right: -285px;
-    width: 25%;
-  }
-  .office-choix {
-    width: 500px;
-  }
-  .fa-tablet-alt {
-    margin-left: 12px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .cadre-general {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-}
-
-@media screen and (min-width: 1140px) {
-  .cadre-general-entrees {
-    margin-right: 10px;
-  }
-}
-
-@media screen and (min-width: 1142px) {
-  .cadre-general-plats {
-    margin-right: 10px;
-  }
-}
-
-@media screen and (min-width: 400px) and (max-width: 1024px) {
-  .cadre-general-contenu {
-    max-width: none;
-  }
-}
-
-@media screen and (min-width: 320px) and (max-width: 425px) {
-  .cadre-general-contenu-plat h3 {
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-  .cadre-general-contenu-plat h4 {
-    font-size: 14px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-}
-
-@media screen and (max-width: 405px) {
-  .cadre-general-contenu:hover .header-menu {
-    max-width: 130px;
-  }
-}
-
-@media screen and (min-width: 440px) and (max-width: 736px) {
-  .office {
-    font-weight: bold;
-    font-size: 15px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 0 15px;
-  }
-}
-
-@media screen and (min-width: 375px) and (max-width: 667px) {
-  .office {
-    font-weight: bold;
-    font-size: 15px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 0 15px;
-  }
-  .fa-tablet-alt {
-    margin-left: 12px;
-  }
-}
-
-@media screen and (min-width: 640px) {
-  .cadre-prix {
-    margin-right: -220px;
-  }
-  .cadre-general-contenu:hover .header-menu {
-    white-space: nowrap;
-    text-overflow: ellipsis;
-  }
 }
 /*# sourceMappingURL=style.css.map */
