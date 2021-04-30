@@ -16,16 +16,7 @@
     .restaurants-pict {
       margin-right: 25px;
     }
-    .cadre-prix {
-     margin-right: -285px;
-      width: 25%;
-    }
-    .office-choix {
-      width: 500px;
-     }
-     .fa-tablet-alt{
-      margin-left:12px;
-    }
+    
 }
   
   @media screen and (min-width: 1024px) {
@@ -118,11 +109,7 @@
 
   @media screen and (min-width: 640px) {
   
-    .cadre-prix {
-      
-      margin-right: -220px;
-      
-    }
+    
     .cadre-general-contenu:hover .header-menu {
       white-space: nowrap;
       text-overflow: ellipsis;
