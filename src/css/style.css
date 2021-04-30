@@ -344,6 +344,7 @@ header .logo img {
   border-bottom: 3px solid #99E2D0;
   width: 43px;
   margin-bottom: 5px;
+  padding-top: 15px;
 }
 
 @keyframes fadeInUp {
