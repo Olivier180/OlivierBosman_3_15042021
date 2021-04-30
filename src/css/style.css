@@ -98,7 +98,7 @@
     margin-left: 12px;
   }
   h2 {
-    margin-left: 25px;
+    margin-left: 10px;
   }
 }
 
@@ -451,15 +451,13 @@ header .logo img {
 }
 
 .entrees {
-  margin-top: 47px;
+  margin-top: 27px;
 }
 
-.entrees h2:after {
-  content: "";
-  display: block;
+.ligneverte h2 {
+  border-bottom: 3px solid #99E2D0;
   width: 43px;
-  height: 3px;
-  background: #99E2D0;
+  margin-bottom: 5px;
 }
 
 @keyframes fadeInUp {
