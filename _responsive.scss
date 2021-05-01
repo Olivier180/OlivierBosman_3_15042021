@@ -1,10 +1,9 @@
-/*RESPONSIVE */
 @media screen and (min-width: 1800px) {
-.containerone {
-  max-width: 1800px;
-  margin: auto;
+  .containerone {
+    max-width: 1800px;
+    margin: auto;
   }
-}
+  }
 
 @media screen and (min-width: 375px) {
   .restaurants-pict {
@@ -12,12 +11,13 @@
     min-width: 280px;
   }
 }
+
 @media screen and (min-width: 650px) {
   .restaurants-pict {
     margin-right: 25px;
   }
+  
 }
-
 
 @media screen and (min-width: 1024px) {
   .cadre-general {
@@ -25,21 +25,15 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .cadre-general-contenu-plat{
-    width: 350px;
-    padding: 14px 0;
-    border-radius: 12px;
-    display: flex;
-    justify-content: space-between;
-    animation: fadeInUp 2s;
- }
-
-}
-
-@media screen and (min-width: 1140px) {
+  
+ 
+  }
+  
+  @media screen and (min-width: 1140px) {
   .cadre-general-entrees {
     margin-right: 10px;
   }
+  
 }
 
 @media screen and (min-width: 1142px) {
@@ -52,48 +46,92 @@
   .cadre-general-contenu {
     max-width: none;
   }
+  
+
 }
 
 @media screen and (min-width: 320px) and (max-width: 425px) {
-.cadre-general-contenu-plat h3 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-.cadre-general-contenu-plat h4 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
- }
+  .cadre-general-contenu-plat h3 {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex-grow: 5;
+   
+  }
+  .cadre-general-contenu-plat h4 {
+    font-size: 14px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex-grow: 5;
+   
+  }
+ 
 }
 
 @media screen and (max-width: 405px) {
-.cadre-general-contenu:hover .header-menu {
-  max-width: 130px;
- }
+  .cadre-general-contenu:hover .header-menu {
+    max-width: 130px;
+  }
+}
+  
+  
+  
+@media screen and (min-width: 440px) and (max-width: 736px) {
+  .office {
+    font-weight: bold;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 15px;
+} 
+
+.header-menu h3 {
+text-overflow: ellipsis;
+white-space: nowrap;
+flex-grow: 5;
+}
+
+.header-menu h4 {
+font-weight: normal;
+text-overflow: ellipsis;
+white-space: nowrap;
+flex-grow: 5;
+}
 }
 
 @media screen and (min-width: 375px) and (max-width: 667px) {
-	.cadre-general-contenu-plat {
-    width: 550px;
-    padding: 14px 0;
-    border-radius: 12px;
+  
+  .office {
+    font-weight: bold;
+    font-size: 15px;
     display: flex;
-    justify-content: space-between;
-    animation: fadeInUp 2s;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 15px;
+}
+.fa-tablet-alt {
+  margin-left:12px;
+}
+h2{
+  margin-left:10px;
 }
 }
 
-@media screen and (min-width: 375px) and (max-width: 812px) {
-	.cadre-general-contenu-plat {
-    width: 710px;
-    padding: 14px 0;
-    border-radius: 12px;
-    display: flex;
-    justify-content: space-between;
-    animation: fadeInUp 2s;
+
+@media screen and (min-width: 640px) {
+
+  
+  .cadre-general-contenu:hover .header-menu {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
 }
-}
+
+
+
+
 
 
 
