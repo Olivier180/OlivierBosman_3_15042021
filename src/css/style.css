@@ -639,7 +639,7 @@ footer a:hover {
   }
 }
 
-@media screen and (min-width: 375px) and (max-width: 736px) {
+@media screen and (min-width: 375px) and (max-width: 812px) {
   .office {
     font-weight: bold;
     font-size: 15px;
@@ -669,6 +669,32 @@ footer a:hover {
   .cadre-general-contenu:hover .header-menu {
     white-space: nowrap;
     text-overflow: ellipsis;
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width: 640px) {
+  .office {
+    font-weight: bold;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 15px;
+  }
+  .fa-tablet-alt {
+    margin-left: 12px;
+  }
+  h2 {
+    margin-left: 10px;
+  }
+  .cadre-general-contenu-plat {
+    width: 600px;
+    padding: 14px 0;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    animation: fadeInUp 2s;
   }
 }
 /*# sourceMappingURL=style.css.map */
