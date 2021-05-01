@@ -1,3 +1,13 @@
+@media screen and (min-width: 640px) {
+  
+    
+  .cadre-general-contenu:hover .header-menu {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+
+
 @media screen and (min-width: 1800px) {
   .containerone {
     max-width: 1800px;
@@ -98,9 +108,13 @@ text-overflow: ellipsis;
 white-space: nowrap;
 flex-grow: 5;
 }
+
+
+
+
 }
 
-@media screen and (min-width: 375px) and (max-width: 667px) {
+@media screen and (min-width: 375px) and (max-width: 736px) {
   
   .office {
     font-weight: bold;
@@ -116,6 +130,16 @@ flex-grow: 5;
 }
 h2{
   margin-left:10px;
+}
+
+
+.cadre-general-contenu-plat {
+  width: 650px;
+  padding: 14px 0;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  animation: fadeInUp 2s;
 }
 }
 
