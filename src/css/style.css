@@ -707,4 +707,12 @@ footer a:hover {
     animation: fadeInUp 2s;
   }
 }
+
+@media screen and (min-width: 1224px) {
+  .cadre-general {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
 /*# sourceMappingURL=style.css.map */
