@@ -30,7 +30,7 @@
     
 }
   
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1224px) {
     .cadre-general {
       display: flex;
       flex-wrap: wrap;
@@ -197,10 +197,4 @@
 
 
 
-    @media screen and (min-width: 1224px){
-    .cadre-general {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-  }
+   
