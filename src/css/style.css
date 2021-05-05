@@ -137,7 +137,6 @@ header .logo img {
   font-family: "Roboto", sans-serif;
   margin: 0 auto;
   background-image: linear-gradient(#FF79DA, #9356DC);
-  transition: background-color 250ms;
   box-shadow: 4px 4px 10px #000000;
 }
 
