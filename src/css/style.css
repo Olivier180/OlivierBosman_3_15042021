@@ -326,16 +326,6 @@ header .logo img {
   max-width: 322px;
 }
 
-.far-fa::before {
-  content: "\f004";
-  font-weight: bold;
-}
-
-.far-fa:hover::before {
-  color: red;
-  cursor: pointer;
-}
-
 .fa-heart:before {
   margin-left: 20px;
 }
