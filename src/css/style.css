@@ -277,27 +277,27 @@ header .logo img {
   }
 }
 
-.restaurants-pict .restaurants-pict-contenu .heart {
+.heart {
   position: absolute;
   right: 20px;
 }
 
-.restaurants-pict .restaurants-pict-contenu .heart-1 {
+.heart-1 {
   position: relative;
 }
 
-.restaurants-pict .restaurants-pict-contenu .heart-1:hover {
+.heart-1:hover {
   animation: coeur-vide-opacity1 1s;
 }
 
-.restaurants-pict .restaurants-pict-contenu .heart-2 {
+.heart-2 {
   position: absolute;
   top: 0px;
   opacity: 0;
   color: #FFF;
 }
 
-.restaurants-pict .restaurants-pict-contenu .heart-2:hover {
+.heart-2:hover {
   animation: coeur-rempli-opacity 1s forwards;
 }
 
@@ -378,7 +378,7 @@ header .logo img {
 
 .cadre-general-contenu {
   background-color: #FFF;
-  max-width: 350px;
+  min-width: 300px;
   height: 70px;
   box-shadow: 4px 4px 16px #3F4143;
   padding: 0 0 0 16px;
@@ -555,25 +555,11 @@ footer a:hover {
   color: #fff;
 }
 
-@media screen and (min-width: 1800px) {
-  .containerone {
-    max-width: 1800px;
-    margin: auto;
-  }
-}
-
 @media screen and (min-width: 1224px) {
   .cadre-general {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-  }
-}
-
-@media screen and (min-width: 375px) {
-  .restaurants-pict {
-    max-width: 330px;
-    min-width: 280px;
   }
 }
 
@@ -584,45 +570,6 @@ footer a:hover {
   .cadre-general-contenu:hover .header-menu {
     white-space: nowrap;
     text-overflow: ellipsis;
-  }
-}
-
-@media screen and (min-width: 1142px) {
-  .cadre-general-plats {
-    margin-right: 10px;
-  }
-  .cadre-general-entrees {
-    margin-right: 10px;
-  }
-}
-
-@media screen and (min-width: 400px) and (max-width: 1024px) {
-  .cadre-general-contenu {
-    max-width: none;
-  }
-}
-
-@media screen and (min-width: 320px) and (max-width: 425px) {
-  .cadre-general-contenu-plat h3, h4 {
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    flex-grow: 5;
-  }
-}
-
-@media screen and (min-width: 440px) and (max-width: 736px) {
-  .office {
-    font-weight: bold;
-    font-size: 15px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 0 15px;
-  }
-  .header-menu h3, h4 {
-    text-overflow: ellipsis;
-    white-space: nowrap;
   }
 }
 
@@ -653,14 +600,9 @@ footer a:hover {
     justify-content: space-between;
     animation: fadeInUp 2s;
   }
-  .office {
-    font-weight: bold;
-    font-size: 15px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 0 15px;
+  .restaurants-pict {
+    max-width: 330px;
+    min-width: 280px;
   }
   .fa-tablet-alt {
     margin-left: 12px;
@@ -672,16 +614,15 @@ footer a:hover {
     white-space: nowrap;
     text-overflow: ellipsis;
   }
+  .header-menu h3, h4 {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .cadre-general-contenu-plat {
     width: 910px;
-    padding: 14px 0;
-    border-radius: 12px;
-    display: flex;
-    justify-content: space-between;
-    animation: fadeInUp 2s;
   }
 }
 /*# sourceMappingURL=style.css.map */

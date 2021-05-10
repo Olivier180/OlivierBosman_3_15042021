@@ -285,24 +285,24 @@ body {
     opacity: 1;
   }
 }
-.restaurants-pict .restaurants-pict-contenu .heart {
+ .heart {
   position: absolute;
   right: 20px;
   
 }
-.restaurants-pict .restaurants-pict-contenu .heart-1 {
+ .heart-1 {
   position: relative;
 }
-.restaurants-pict .restaurants-pict-contenu .heart-1:hover {
+ .heart-1:hover {
   animation: coeur-vide-opacity1 1s;
 }
-.restaurants-pict .restaurants-pict-contenu .heart-2 {
+ .heart-2 {
   position: absolute;
   top: 0px;
   opacity: 0;
   color: #FFF;
 }
-.restaurants-pict .restaurants-pict-contenu .heart-2:hover {
+ .heart-2:hover {
   animation: coeur-rempli-opacity 1s forwards;
 }
 .restaurants .button-news {
@@ -384,7 +384,7 @@ body {
 
 .cadre-general-contenu {
   background-color: #FFF;
-  max-width: 350px;
+  min-width: 300px;
   height: 70px;
   box-shadow: 4px 4px 16px #3F4143;
   padding: 0 0 0 16px;
