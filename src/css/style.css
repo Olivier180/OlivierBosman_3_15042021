@@ -282,13 +282,9 @@ header .logo img {
   }
 }
 
-.coeur-txt {
-  display: flex;
-}
-
-.heart-menu {
+.heart {
   position: absolute;
-  left: 250px;
+  right: 20px;
 }
 
 .heart-1 {
