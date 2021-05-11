@@ -1,12 +1,10 @@
-
 @media screen and (min-width: 1224px) {
-    .cadre-general {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    
-    }
+  .cadre-general {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
+}
 
 @media screen and (min-width: 650px) {
   .restaurants-pict {
@@ -16,10 +14,8 @@
     white-space: nowrap;
     text-overflow: ellipsis;
   }
-  
 }
 @media screen and (min-width: 375px) and (max-width: 812px) {
-  
   .office {
     font-weight: bold;
     font-size: 15px;
@@ -28,53 +24,51 @@
     flex-wrap: wrap;
     justify-content: center;
     padding: 0 15px;
-}
-.fa-tablet-alt {
-  margin-left:12px;
-}
-h2{
-  margin-left:10px;
-}
-.cadre-general-contenu:hover .header-menu {
-  max-width: 130px;
-}
+  }
+  .fa-tablet-alt {
+    margin-left: 12px;
+  }
+  h2 {
+    margin-left: 10px;
+  }
+  .cadre-general-contenu:hover .header-menu {
+    max-width: 130px;
+  }
 
-.cadre-general-contenu-plat {
-  width: 650px;
-  padding: 14px 0;
-  border-radius: 12px;
-  display: flex;
-  justify-content: space-between;
-  animation: fadeInUp 2s;
-}
+  .cadre-general-contenu-plat {
+    width: 650px;
+    padding: 14px 0;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    animation: fadeInUp 2s;
+  }
 
-.restaurants-pict {
-  max-width: 330px;
-  min-width: 280px;
-}
+  .restaurants-pict {
+    max-width: 330px;
+    min-width: 280px;
+  }
 
-.fa-tablet-alt {
-margin-left:12px;
-}
-h2{
-margin-left:10px;
-}
+  .fa-tablet-alt {
+    margin-left: 12px;
+  }
+  h2 {
+    margin-left: 10px;
+  }
 
-.cadre-general-contenu:hover .header-menu {
-white-space: nowrap;
-text-overflow: ellipsis;
-}
-.header-menu h3, h4{
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  
+  .cadre-general-contenu:hover .header-menu {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .header-menu h3,
+  h4 {
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-
   .cadre-general-contenu-plat {
     width: 910px;
-    
-}
   }
+}
