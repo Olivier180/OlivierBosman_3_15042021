@@ -251,7 +251,7 @@ header .logo img {
 .restaurants-pict .restaurants-pict-contenu .restaurants-pict-contenut-nom {
   position: relative;
 }
-@keyframes coeur-rempli-opacity {
+@keyframes heart-rempli-opacity {
   0% {
     opacity: 0;
   }
@@ -270,7 +270,7 @@ header .logo img {
     transition-duration: 250ms;
   }
 }
-@keyframes coeur-vide-opacity1 {
+@keyframes heart-vide-opacity1 {
   0% {
     opacity: 0;
   }
@@ -281,6 +281,16 @@ header .logo img {
     opacity: 1;
   }
 }
+
+.heart-menu {
+  position: absolute;
+  left: 250px;
+}
+
+.coeur-txt {
+  display: flex;
+}
+
 .heart {
   position: absolute;
   right: 20px;
@@ -289,7 +299,7 @@ header .logo img {
   position: relative;
 }
 .heart-1:hover {
-  animation: coeur-vide-opacity1 1s;
+  animation: heart-vide-opacity1 1s;
 }
 .heart-2 {
   position: absolute;
@@ -298,7 +308,7 @@ header .logo img {
   color: #fff;
 }
 .heart-2:hover {
-  animation: coeur-rempli-opacity 1s forwards;
+  animation: heart-rempli-opacity 1s forwards;
 }
 .restaurants .button-news {
   background-color: #99e2d0;

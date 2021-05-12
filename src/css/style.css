@@ -250,7 +250,7 @@ header .logo img {
   position: relative;
 }
 
-@keyframes coeur-rempli-opacity {
+@keyframes heart-rempli-opacity {
   0% {
     opacity: 0;
   }
@@ -270,7 +270,7 @@ header .logo img {
   }
 }
 
-@keyframes coeur-vide-opacity1 {
+@keyframes heart-vide-opacity1 {
   0% {
     opacity: 0;
   }
@@ -280,6 +280,15 @@ header .logo img {
   100% {
     opacity: 1;
   }
+}
+
+.heart-menu {
+  position: absolute;
+  left: 250px;
+}
+
+.coeur-txt {
+  display: flex;
 }
 
 .heart {
@@ -292,7 +301,7 @@ header .logo img {
 }
 
 .heart-1:hover {
-  animation: coeur-vide-opacity1 1s;
+  animation: heart-vide-opacity1 1s;
 }
 
 .heart-2 {
@@ -303,7 +312,7 @@ header .logo img {
 }
 
 .heart-2:hover {
-  animation: coeur-rempli-opacity 1s forwards;
+  animation: heart-rempli-opacity 1s forwards;
 }
 
 .restaurants .button-news {
