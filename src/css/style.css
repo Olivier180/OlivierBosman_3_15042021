@@ -195,12 +195,12 @@ header .logo img {
   margin-bottom: 50px;
 }
 
-.reserve-menus {
+.reserve .reserve-menus {
   font-weight: bold;
   font-size: 25px;
 }
 
-.reserve-decouvrir {
+.reserve .reserve-menus .reserve-decouvrir {
   margin-bottom: 12px;
 }
 
@@ -430,7 +430,7 @@ header .logo img {
   align-self: flex-end;
 }
 
-.cadre h2 {
+.cadre .far h2 {
   margin-bottom: 35px;
 }
 
@@ -489,7 +489,7 @@ header .logo img {
   font-size: 16px;
 }
 
-.cadre-general-contenu-plat h4 {
+.cadre-general-contenu-plat h3 h4 {
   font-size: 14px;
 }
 
@@ -618,7 +618,7 @@ footer h3 {
   font-weight: normal;
 }
 
-footer a {
+footer h3 a {
   text-decoration: none;
 }
 
