@@ -1,3 +1,75 @@
+@media screen and (min-width: 375px) and (max-width: 812px) {
+  .office {
+    font-weight: bold;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 15px;
+  }
+  .fa-tablet-alt {
+    margin-left: 12px;
+  }
+  h2 {
+    margin-left: 10px;
+  }
+  .cadre-general-contenu:hover .header-menu {
+    max-width: 130px;
+  }
+  .cadre-general-contenu-plat {
+    width: 650px;
+    padding: 14px 0;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    animation: fadeInUp 2s;
+  }
+  .restaurants-pict {
+    max-width: 330px;
+    min-width: 280px;
+  }
+  .fa-tablet-alt {
+    margin-left: 12px;
+  }
+  h2 {
+    margin-left: 10px;
+  }
+  .cadre-general-contenu:hover .header-menu {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .header-menu h3,
+  h4 {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .restaurants-pict {
+    margin-right: 25px;
+  }
+  .cadre-general-contenu:hover .header-menu {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .cadre-general-contenu-plat {
+    width: 910px;
+  }
+}
+
+@media screen and (min-width: 1224px) {
+  .cadre-general {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
 body {
   box-sizing: border-box;
 }
@@ -246,7 +318,7 @@ header .logo img {
   margin-bottom: 6px;
 }
 
-.restaurants-pict .restaurants-pict-contenu .restaurants-pict-contenut-nom {
+.restaurants-pict .restaurants-pict-contenu .restaurants-pict-contenu-nom {
   position: relative;
 }
 
@@ -287,21 +359,17 @@ header .logo img {
   left: 250px;
 }
 
-.heart-txt {
-  display: flex;
-}
-
 .heart {
   position: absolute;
   right: 20px;
 }
 
-.heart-1 {
-  position: relative;
+.heart-txt {
+  display: flex;
 }
 
-.heart-1:hover {
-  animation: heart-vide-opacity1 1s;
+.heart-1 {
+  position: relative;
 }
 
 .heart-2 {
@@ -309,6 +377,10 @@ header .logo img {
   top: 0px;
   opacity: 0;
   color: #fff;
+}
+
+.heart-1:hover {
+  animation: heart-vide-opacity1 1s;
 }
 
 .heart-2:hover {
@@ -432,13 +504,7 @@ header .logo img {
   text-overflow: ellipsis;
 }
 
-.cadre-general-contenu:hover .header-menu h3 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-.cadre-general-contenu:hover .header-menu h4 {
+.cadre-general-contenu:hover .header-menu h3 .header-menu h4 {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -567,77 +633,5 @@ footer a:hover {
   font-size: 20px;
   margin-bottom: 15px;
   color: #fff;
-}
-
-@media screen and (min-width: 1224px) {
-  .cadre-general {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-}
-
-@media screen and (min-width: 650px) {
-  .restaurants-pict {
-    margin-right: 25px;
-  }
-  .cadre-general-contenu:hover .header-menu {
-    white-space: nowrap;
-    text-overflow: ellipsis;
-  }
-}
-
-@media screen and (min-width: 375px) and (max-width: 812px) {
-  .office {
-    font-weight: bold;
-    font-size: 15px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 0 15px;
-  }
-  .fa-tablet-alt {
-    margin-left: 12px;
-  }
-  h2 {
-    margin-left: 10px;
-  }
-  .cadre-general-contenu:hover .header-menu {
-    max-width: 130px;
-  }
-  .cadre-general-contenu-plat {
-    width: 650px;
-    padding: 14px 0;
-    border-radius: 12px;
-    display: flex;
-    justify-content: space-between;
-    animation: fadeInUp 2s;
-  }
-  .restaurants-pict {
-    max-width: 330px;
-    min-width: 280px;
-  }
-  .fa-tablet-alt {
-    margin-left: 12px;
-  }
-  h2 {
-    margin-left: 10px;
-  }
-  .cadre-general-contenu:hover .header-menu {
-    white-space: nowrap;
-    text-overflow: ellipsis;
-  }
-  .header-menu h3,
-  h4 {
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .cadre-general-contenu-plat {
-    width: 910px;
-  }
 }
 /*# sourceMappingURL=style.css.map */
