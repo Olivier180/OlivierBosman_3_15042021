@@ -8,15 +8,6 @@
     justify-content: center;
     padding: 0 15px;
   }
-  .fa-tablet-alt {
-    margin-left: 12px;
-  }
-  h2 {
-    margin-left: 10px;
-  }
-  .cadre-general-contenu:hover .header-menu {
-    max-width: 130px;
-  }
 
   .cadre-general-contenu-plat {
     width: 650px;
@@ -35,13 +26,12 @@
   .fa-tablet-alt {
     margin-left: 12px;
   }
-  h2 {
-    margin-left: 10px;
-  }
+  
 
   .cadre-general-contenu:hover .header-menu {
     white-space: nowrap;
     text-overflow: ellipsis;
+    max-width: 130px;
   }
   .header-menu h3,
   h4 {
@@ -59,8 +49,6 @@
     text-overflow: ellipsis;
   }
 }
-
-
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .cadre-general-contenu-plat {
