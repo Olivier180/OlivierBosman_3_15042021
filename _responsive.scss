@@ -1,3 +1,20 @@
+
+@media screen and (min-width: 1224px) {
+  .cadre-general {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+
+
+
+
+
+
+
+
 @media screen and (min-width: 375px) and (max-width: 812px) {
   .office {
     font-weight: bold;
@@ -31,12 +48,14 @@
   .cadre-general-contenu:hover .header-menu {
     white-space: nowrap;
     text-overflow: ellipsis;
+    overflow: hidden;
     max-width: 130px;
   }
   .header-menu h3,
   h4 {
     text-overflow: ellipsis;
     white-space: nowrap;
+    overflow: hidden;
   }
 }
 
@@ -56,10 +75,4 @@
   }
 }
 
-@media screen and (min-width: 1224px) {
-  .cadre-general {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-}
+
