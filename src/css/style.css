@@ -6,6 +6,22 @@
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .cadre-general-contenu-plat {
+    width: 910px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .restaurants-pict {
+    margin-right: 25px;
+  }
+  .cadre-general-contenu:hover .header-menu {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+
 @media screen and (min-width: 375px) and (max-width: 812px) {
   .office {
     font-weight: bold;
@@ -41,23 +57,6 @@
   h4 {
     text-overflow: ellipsis;
     white-space: nowrap;
-    overflow: hidden;
-  }
-}
-
-@media screen and (min-width: 650px) {
-  .restaurants-pict {
-    margin-right: 25px;
-  }
-  .cadre-general-contenu:hover .header-menu {
-    white-space: nowrap;
-    text-overflow: ellipsis;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .cadre-general-contenu-plat {
-    width: 910px;
   }
 }
 
