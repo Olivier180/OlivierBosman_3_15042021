@@ -1,14 +1,14 @@
 @charset "UTF-8";
 @import "_vars";
-
 @import "responsive";
 
 body {
   box-sizing: border-box;
 }
+
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
 a {
@@ -16,60 +16,16 @@ a {
   color: black;
 }
 
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
+.containerone {
+  max-width: 2560px;
+}
+
+h2, h3, h4, h5, h6, p {
   font-family: "Roboto", sans-serif;
 }
 
 .containerone {
-  max-width: 1900px;
-  margin: 0;
-  padding: 0;
-}
-
-.chargement {
-  border: 10px solid $color-violet;
-  width: 205px;
-  height: 205px;
-  border-top: 10px solid $color-vert;
-  border-bottom: 10px solid $color-vert;
-  border-radius: 50%;
-  margin: auto;
-  z-index: 20;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  -webkit-animation: spin 3s linear forwards;
-  -o-animation: spin 3s linear forwards;
-  animation: spin 3s linear forwards;
-}
-
-@-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    opacity: 0;
-  }
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-    opacity: 1;
-  }
-  100% {
-    transform: rotate(360deg);
-    opacity: 0;
-  }
+  max-width: 2560px;
 }
 
 /*HEADER*/
@@ -115,18 +71,20 @@ header {
   padding: 20px 0;
   font-weight: bold;
   width: 100%;
-  input {
-    background-color: #eaeaea;
+input{
+  background-color: #eaeaea;
     border: none;
     margin-right: -35px;
     cursor: pointer;
-  }
+}
 }
 
 ::placeholder {
   color: black;
   font-weight: bold;
 }
+
+
 
 /* PREFACE */
 .reserve {
@@ -149,15 +107,16 @@ header {
   padding: 12px 24px;
   border-radius: 30px;
   text-align: center;
-  color: #fff;
+  color: #FFF;
   font-weight: normal;
   font-size: 15px;
   font-family: "Roboto", sans-serif;
   margin: 0 auto;
-  background-image: linear-gradient(#ff79da, #9356dc);
+  background-image: linear-gradient(#FF79DA, #9356DC);
   transition: background-color 250ms;
   box-shadow: 4px 4px 10px #000000;
 }
+
 .reserve-explorer:hover {
   opacity: 0.8;
   box-shadow: 16px 16px 20px #000000;
@@ -183,7 +142,7 @@ header {
 .office-choix {
   margin: 0 20px 20px 40px;
   font-weight: bold;
-  background-color: #f6f6f6;
+  background-color: #F6F6F6;
   padding: 30px 50px 30px 18px;
   margin-left: 20px;
   text-align: center;
@@ -193,6 +152,7 @@ header {
   width: 300px;
   max-height: 78px;
 }
+
 .office-choix:hover {
   background-color: #f5edff;
   .fas {
@@ -205,8 +165,8 @@ header {
   height: 18px;
   padding: 4px 4px;
   border-radius: 50%;
-  background-color: #9356dc;
-  color: #fff;
+  background-color: #9356DC;
+  color: #FFF;
   position: absolute;
   top: 30%;
   left: -4%;
@@ -253,34 +213,34 @@ header {
 .restaurants-pict .restaurants-pict-contenu .restaurants-pict-contenu-nom {
   position: relative;
 }
+
 @keyframes heart-rempli-opacity {
   0% {
     opacity: 0;
   }
   50% {
-    opacity: 0;
-    background-image: linear-gradient(100deg, #9356dc, #ff79da);
+    opacity: 0.5;
+    background-image: linear-gradient(100deg, #9356DC, #FF79DA);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    transition-duration: 250ms;
   }
   100% {
     opacity: 1;
-    background-image: linear-gradient(100deg, #9356dc, #ff79da);
+    background-image: linear-gradient(100deg, #9356DC, #FF79DA);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    transition-duration: 250ms;
   }
 }
+
 @keyframes heart-vide-opacity1 {
   0% {
-    opacity: 0;
+    opacity: 1;
   }
   50% {
     opacity: 0;
   }
   100% {
-    opacity: 1;
+    opacity: 0;
   }
 }
 
@@ -315,10 +275,8 @@ header {
 }
 
 .restaurants .button-news {
-  background-color: #99e2d0;
-  color: #40a78d;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  font-weight: bold;
+  background-color: #99E2D0;
+  color: #1b6150;
   padding: 8px;
   border-radius: 2px;
   position: absolute;
@@ -326,14 +284,14 @@ header {
   right: 12px;
 }
 
-/*LES BANNIERES*/
+/*Bannière*/
 .picture-restaurant img {
   width: 100%;
   max-height: 250px;
   object-fit: cover;
 }
 
-/*CADRE RESTAURANTS*/
+/*Carte restaurant*/
 .cadre-titre {
   font-family: "Shrikhand", cursive;
   max-width: 322px;
@@ -360,13 +318,18 @@ header {
 }
 
 .entrees {
-  margin-top: 27px;
+  margin-bottom: 27px;
 }
 
 .ligneverte h2 {
   border-bottom: 3px solid #99e2d0;
   width: 43px;
-  margin-bottom: 5px;
+  margin-top: 30px;
+}
+
+.cadre-general-entrees h2, .cadre-general-plats h2, .cadre-general-desserts h2 {
+  font-weight: normal;
+  font-size: 20px;
 }
 
 @keyframes fadeInUp {
@@ -382,18 +345,34 @@ header {
   }
 }
 
-.cadre-general-entrees h2,
-.cadre-general-plats h2,
-.cadre-general-desserts h2 {
-  font-weight: normal;
-  font-size: 20px;
+.cadre-general-contenu {
+  background-color: #FFF;
+  max-width: 350px;
+  height: 70px;
+  box-shadow: 4px 4px 16px #3F4143;
+  padding: 0 0 0 16px;
+  border-radius: 12px;
+  margin: 16px 0;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  animation: fadeInUp 1s;
+}
+
+.cadre-general-contenu-plat {
+  width: 350px;
+  padding: 14px 0;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  animation: fadeInUp 2s;
 }
 
 .cadre-general-contenu {
-  background-color: #fff;
-  min-width: 300px;
+  background-color: #FFF;
+  max-width: 350px;
   height: 70px;
-  box-shadow: 4px 4px 16px #3f4143;
+  box-shadow: 4px 4px 16px #3F4143;
   padding: 0 0 0 16px;
   border-radius: 12px;
   margin: 16px 0;
@@ -424,15 +403,24 @@ header {
   min-width: 64px;
   transition: margin-right 0.5s;
 }
+
 .cadre-general-contenu:hover .header-menu {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.cadre-general-contenu:hover .header-menu h3 .header-menu h4 {
+
+.cadre-general-contenu:hover .header-menu h3 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  }
+
+.cadre-general-contenu:hover .header-menu h4 {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
+
 
 .cadre-general-contenu:hover .cercle {
   transform: rotate(360deg);
@@ -451,14 +439,15 @@ header {
   width: 26px;
   height: 26px;
   border-radius: 100px;
-  background: #fff;
-  color: #99e2d0;
+  background: #FFF;
+  color: #99E2D0;
   display: flex;
   align-items: center;
   align-self: center;
   align-content: center;
   transition: transform 0.5s;
 }
+
 .cercle .fas {
   margin-left: 4px;
 }
@@ -495,35 +484,37 @@ header {
   white-space: nowrap;
 }
 
-/*BOUTON DE COMMANDE*/
+/*Bouton Commander*/
 .button-commande {
   padding: 30px 0 80px 0;
   text-align: center;
-  background-color: #f6f6f6;
+  background-color: #F6F6F6;
 }
+
 .button-commander {
-  background-color: #9356dc;
+  background-color: #9356DC;
   padding: 15px 50px;
   border-radius: 30px;
   text-align: center;
   font-family: "Roboto", sans-serif;
-  color: #fff;
+  color: #FFF;
   font-weight: normal;
   font-size: 18px;
   margin: 0 auto;
-  background-image: linear-gradient(#ff79da, #9356dc);
+  background-image: linear-gradient(#FF79DA, #9356DC);
   transition: background-color 250ms;
   box-shadow: 4px 4px 10px #000;
 }
+
 .button-commander:hover {
   opacity: 0.8;
   box-shadow: 16px 16px 20px #000;
 }
 
-/*FOOTER*/
+/*Footer*/
 footer {
   background-color: #353535;
-  color: #fff;
+  color: #FFF;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -531,6 +522,7 @@ footer {
   max-width: 100%;
   min-width: 320px;
 }
+
 footer h3 {
   margin: 0 0 10px 20px;
   color: #fff;
@@ -542,12 +534,16 @@ footer h3 {
 
 footer a:hover {
   text-decoration: underline;
-  color: #fff;
+  color: #FFF;
 }
-.footer-logo {
-  font-family: shrikhand, "cursive";
-  margin-left: 16px;
+
+footer .footer-logo {
+  font-family: "Shrikhand", cursive;
+  font-weight: normal;
   font-size: 20px;
   margin-bottom: 15px;
-  color: #fff;
 }
+
+
+
+
