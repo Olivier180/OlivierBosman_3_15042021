@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import "_vars";
-@import "responsive";
+
 
 body {
   box-sizing: border-box;
@@ -16,9 +16,7 @@ a {
   color: black;
 }
 
-.containerone {
-  max-width: 2560px;
-}
+
 
 h2, h3, h4, h5, h6, p {
   font-family: "Roboto", sans-serif;
@@ -546,4 +544,4 @@ footer .footer-logo {
 
 
 
-
+@import "responsive";

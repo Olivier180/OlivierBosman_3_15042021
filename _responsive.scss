@@ -1,18 +1,7 @@
 /*RESPONSIVE */
-@media screen and (min-width: 1224px) {
-  .cadre-general {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-}
 
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .cadre-general-contenu-plat {
-    width: 910px;
-  }
-}
+
 
 @media screen and (min-width: 650px) {
   .restaurants-pict {
@@ -23,6 +12,9 @@
     text-overflow: ellipsis;
   }
 }
+
+
+
 
 @media screen and (min-width: 375px) and (max-width: 812px) {
   .office {
@@ -66,4 +58,23 @@
     white-space: nowrap;
     
   }
+}
+
+@media screen and (min-width: 400px) and (max-width: 1024px) {
+  .cadre-general-contenu {
+    max-width: none;
+  }
+    .cadre-general-contenu-plat {
+      width: 910px;
+  }
+}
+
+
+@media screen and (min-width: 1224px) {
+  .cadre-general {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
 }
