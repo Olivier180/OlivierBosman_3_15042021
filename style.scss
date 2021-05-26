@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import "_vars";
-@import "responsive";
+
 
 body {
   box-sizing: border-box;
@@ -542,6 +542,6 @@ footer .footer-logo {
   margin-bottom: 15px;
 }
 
-
+@import "responsive";
 
 

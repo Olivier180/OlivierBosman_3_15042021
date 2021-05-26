@@ -1,8 +1,5 @@
 /*RESPONSIVE */
 
-
-
-
 @media screen and (min-width: 650px) {
   .restaurants-pict {
     margin-right: 25px;
@@ -12,9 +9,6 @@
     text-overflow: ellipsis;
   }
 }
-
-
-
 
 @media screen and (min-width: 375px) and (max-width: 812px) {
   .office {
@@ -44,7 +38,6 @@
   .fa-tablet-alt {
     margin-left: 12px;
   }
-  
 
   .cadre-general-contenu:hover .header-menu {
     white-space: nowrap;
@@ -56,7 +49,6 @@
   h4 {
     text-overflow: ellipsis;
     white-space: nowrap;
-    
   }
 }
 
@@ -64,11 +56,10 @@
   .cadre-general-contenu {
     max-width: none;
   }
-    .cadre-general-contenu-plat {
-      width: 910px;
+  .cadre-general-contenu-plat {
+    width: 910px;
   }
 }
-
 
 @media screen and (min-width: 1224px) {
   .cadre-general {
@@ -76,5 +67,4 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  
 }
