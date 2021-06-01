@@ -516,6 +516,7 @@ header .logo img {
   font-weight: normal;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-size: 14px;
 }
 
 /*Bouton Commander*/
