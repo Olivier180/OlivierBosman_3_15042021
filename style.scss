@@ -396,29 +396,6 @@ input{
   animation: fadeInUp 2s;
 }
 
-.cadre-general-contenu {
-  background-color: #FFF;
-  max-width: 350px;
-  height: 70px;
-  box-shadow: 4px 4px 16px #3F4143;
-  padding: 0 0 0 16px;
-  border-radius: 12px;
-  margin: 16px 0;
-  display: flex;
-  justify-content: space-between;
-  overflow: hidden;
-  animation: fadeInUp 1s;
-}
-
-.cadre-general-contenu-plat {
-  width: 350px;
-  padding: 14px 0;
-  border-radius: 12px;
-  display: flex;
-  justify-content: space-between;
-  animation: fadeInUp 2s;
-}
-
 .cadre-general-contenu-plat h3 {
   font-size: 16px;
   h4 {
