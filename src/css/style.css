@@ -622,5 +622,8 @@ footer .footer-logo {
     flex-wrap: wrap;
     justify-content: space-around;
   }
+  .cadre-general-contenu-plat {
+    max-width: 1210px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
