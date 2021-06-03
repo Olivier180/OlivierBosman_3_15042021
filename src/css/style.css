@@ -606,9 +606,10 @@ footer .footer-logo {
   }
 }
 
-@media screen and (min-width: 400px) and (max-width: 1024px) {
+@media screen and (min-width: 400px) and (max-width: 1223px) {
   .cadre-general-contenu {
     max-width: none;
+    min-width: 345px;
   }
   .cadre-general-contenu-plat {
     width: 910px;
@@ -619,7 +620,7 @@ footer .footer-logo {
   .cadre-general {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }
 /*# sourceMappingURL=style.css.map */
