@@ -18,6 +18,7 @@ h2, h3, h4, h5, h6, p {
 }
 
 .containerone {
+  max-width: 95%;
   margin: auto;
 }
 
@@ -612,7 +613,7 @@ footer .footer-logo {
     min-width: 345px;
   }
   .cadre-general-contenu-plat {
-    width: 910px;
+    width: 1210px;
   }
 }
 
